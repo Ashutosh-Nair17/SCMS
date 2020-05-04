@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="farm.jpg" type="image/gif" >
+  <title>Product Details</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="adp.css">
+</head>
+
+<body>
+  
+<button class="btn" onclick="redirectFarmerProfile()"><i class="fa fa-user"></i>
+   My Profile</button>
+  <div class="row">
+  <section class="section">
+    <header>
+      <!-- <h3>Product</h3> -->
+      <h3>Fill in the Product details</h3>
+    </header>
+    <main>
+      <form>
+        <div class="form-item box-item">
+          <input type="text" name="name" id="productName" class="tx1" placeholder="Product Name" data-required>
+          <small class="errorReq">
+          <i class="fa fa-asterisk" aria-hidden="true">
+          </i> required field</small>
+        </div>
+
+        <div class="form-item box-item">
+          <input type="text" name="pPrice" class="tx1"  id="StartingBid" placeholder="Product Details" data-number data-required/>
+          <small class="errorReq">
+          <i class="fa fa-asterisk" aria-hidden="true">
+          </i> required field</small>
+        </div>
+
+
+        <div class="form-item box-item">
+          <input type="number" min="0" name="quantity" id="quantity" placeholder="Quantity" data-required>
+          <small class="errorReq">
+          <i class="fa fa-asterisk" aria-hidden="true">
+          </i> required field</small>
+          <div class="form-item box-item">
+           
+          </div>
+        </div>
+
+        <div class="form-item box-item">
+          <input type="text" name="Price" id="location2" class="tx1" placeholder="Price" data-required>
+          <small class="errorReq">
+          <i class="fa fa-asterisk" aria-hidden="true">
+          </i> required field</small>
+        </div>
+
+        <div class="form-item">
+          <span id="submit" class="submit" onclick="dataRetreival()">Submit</span>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p> all rights reserved</p>
+    </footer>
+    <i class="wave"></i>
+  </section>
+</div>
+<script src="farmerproduct.js"></script>
+<script type="text/javascript" src="farmerprofile.js"></script>
+
+</body>
+
+</html>
